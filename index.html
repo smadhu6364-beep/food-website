@@ -3,10 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>complete responsive food website design tutorial </title>
+    <title>Food: made with love</title>
+    <meta name="description" content="A responsive single-page food and restaurant landing page: specialities, popular dishes, gallery, ordering and contact.">
+    <meta name="theme-color" content="#ff3838">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
 
     <!-- custom css file link  -->
     <link rel="stylesheet" href="style.css">
@@ -18,11 +21,11 @@
 
 <header>
 
-    <a href="#" class="logo"><i class="fas fa-utensils"></i>food</a>
+    <a href="#home" class="logo"><i class="fas fa-utensils"></i>food</a>
 
-    <div id="menu-bar" class="fas fa-bars"></div>
+    <button id="menu-bar" class="fas fa-bars" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"></button>
 
-    <nav class="navbar">
+    <nav class="navbar" id="site-nav" aria-label="Main">
         <a href="#home">home</a>
         <a href="#speciality">speciality</a>
         <a href="#popular">popular</a>
@@ -42,11 +45,11 @@
     <div class="content">
         <h3>food made with love</h3>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas accusamus tempore temporibus rem amet laudantium animi optio voluptatum. Natus obcaecati unde porro nostrum ipsam itaque impedit incidunt rem quisquam eos!</p>
-        <a href="#" class="btn">order now</a>
+        <a href="#order" class="btn">order now</a>
     </div>
 
     <div class="image">
-        <img src="images/home-img.png" alt="">
+        <img src="images/home-img.png" alt="A plate of food">
     </div>
 
 </section>
@@ -62,50 +65,50 @@
     <div class="box-container">
 
         <div class="box">
-            <img class="image" src="images/s-img-1.jpg" alt="">
+            <img loading="lazy" class="image" src="images/s-img-1.jpg" alt="Tasty burger">
             <div class="content">
-                <img src="images/s-1.png" alt="">
+                <img loading="lazy" src="images/s-1.png" alt="">
                 <h3>tasty burger</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
             </div>
         </div>
         <div class="box">
-            <img class="image" src="images/s-img-2.jpg" alt="">
+            <img loading="lazy" class="image" src="images/s-img-2.jpg" alt="Tasty pizza">
             <div class="content">
-                <img src="images/s-2.png" alt="">
+                <img loading="lazy" src="images/s-2.png" alt="">
                 <h3>tasty pizza</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
             </div>
         </div>
         <div class="box">
-            <img class="image" src="images/s-img-3.jpg" alt="">
+            <img loading="lazy" class="image" src="images/s-img-3.jpg" alt="Cold ice-cream">
             <div class="content">
-                <img src="images/s-3.png" alt="">
+                <img loading="lazy" src="images/s-3.png" alt="">
                 <h3>cold ice-cream</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
             </div>
         </div>
         <div class="box">
-            <img class="image" src="images/s-img-4.jpg" alt="">
+            <img loading="lazy" class="image" src="images/s-img-4.jpg" alt="Cold drinks">
             <div class="content">
-                <img src="images/s-4.png" alt="">
+                <img loading="lazy" src="images/s-4.png" alt="">
                 <h3>cold drinks</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
             </div>
         </div>
         <div class="box">
-            <img class="image" src="images/s-img-5.jpg" alt="">
+            <img loading="lazy" class="image" src="images/s-img-5.jpg" alt="Tasty sweets">
             <div class="content">
-                <img src="images/s-5.png" alt="">
+                <img loading="lazy" src="images/s-5.png" alt="">
                 <h3>tasty sweets</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
             </div>
         </div>
         <div class="box">
-            <img class="image" src="images/s-img-6.jpg" alt="">
+            <img loading="lazy" class="image" src="images/s-img-6.jpg" alt="Healthy breakfast">
             <div class="content">
-                <img src="images/s-6.png" alt="">
-                <h3>healty breakfast</h3>
+                <img loading="lazy" src="images/s-6.png" alt="">
+                <h3>healthy breakfast</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda inventore neque amet ipsa tenetur voluptates aperiam tempore libero labore aut.</p>
             </div>
         </div>
@@ -126,81 +129,81 @@
 
         <div class="box">
             <span class="price"> $5 - $20 </span>
-            <img src="images/p-1.jpg" alt="">
+            <img loading="lazy" src="images/p-1.jpg" alt="Tasty burger">
             <h3>tasty burger</h3>
-            <div class="stars">
+            <div class="stars" role="img" aria-label="Rated 4 out of 5">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
             </div>
-            <a href="#" class="btn">order now</a>
+            <a href="#order" class="btn">order now</a>
         </div>
         <div class="box">
             <span class="price"> $5 - $20 </span>
-            <img src="images/p-2.jpg" alt="">
+            <img loading="lazy" src="images/p-2.jpg" alt="Tasty cakes">
             <h3>tasty cakes</h3>
-            <div class="stars">
+            <div class="stars" role="img" aria-label="Rated 4 out of 5">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
             </div>
-            <a href="#" class="btn">order now</a>
+            <a href="#order" class="btn">order now</a>
         </div>
         <div class="box">
             <span class="price"> $5 - $20 </span>
-            <img src="images/p-3.jpg" alt="">
+            <img loading="lazy" src="images/p-3.jpg" alt="Tasty sweets">
             <h3>tasty sweets</h3>
-            <div class="stars">
+            <div class="stars" role="img" aria-label="Rated 4 out of 5">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
             </div>
-            <a href="#" class="btn">order now</a>
+            <a href="#order" class="btn">order now</a>
         </div>
         <div class="box">
             <span class="price"> $5 - $20 </span>
-            <img src="images/p-4.jpg" alt="">
+            <img loading="lazy" src="images/p-4.jpg" alt="Tasty cupcakes">
             <h3>tasty cupcakes</h3>
-            <div class="stars">
+            <div class="stars" role="img" aria-label="Rated 4 out of 5">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
             </div>
-            <a href="#" class="btn">order now</a>
+            <a href="#order" class="btn">order now</a>
         </div>
         <div class="box">
             <span class="price"> $5 - $20 </span>
-            <img src="images/p-5.jpg" alt="">
+            <img loading="lazy" src="images/p-5.jpg" alt="Cold drinks">
             <h3>cold drinks</h3>
-            <div class="stars">
+            <div class="stars" role="img" aria-label="Rated 4 out of 5">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
             </div>
-            <a href="#" class="btn">order now</a>
+            <a href="#order" class="btn">order now</a>
         </div>
         <div class="box">
             <span class="price"> $5 - $20 </span>
-            <img src="images/p-6.jpg" alt="">
+            <img loading="lazy" src="images/p-6.jpg" alt="Cold ice-cream">
             <h3>cold ice-cream</h3>
-            <div class="stars">
+            <div class="stars" role="img" aria-label="Rated 4 out of 5">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
             </div>
-            <a href="#" class="btn">order now</a>
+            <a href="#order" class="btn">order now</a>
         </div>
 
     </div>
@@ -218,19 +221,19 @@
     <section class="steps">
 
         <div class="box">
-            <img src="images/step-1.jpg" alt="">
+            <img loading="lazy" src="images/step-1.jpg" alt="Choose your favorite food">
             <h3>choose your favorite food</h3>
         </div>
         <div class="box">
-            <img src="images/step-2.jpg" alt="">
+            <img loading="lazy" src="images/step-2.jpg" alt="Free and fast delivery">
             <h3>free and fast delivery</h3>
         </div>
         <div class="box">
-            <img src="images/step-3.jpg" alt="">
+            <img loading="lazy" src="images/step-3.jpg" alt="Easy payments methods">
             <h3>easy payments methods</h3>
         </div>
         <div class="box">
-            <img src="images/step-4.jpg" alt="">
+            <img loading="lazy" src="images/step-4.jpg" alt="And finally, enjoy your food">
             <h3>and finally, enjoy your food</h3>
         </div>
     
@@ -249,75 +252,75 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="images/g-1.jpg" alt="">
+            <img loading="lazy" src="images/g-1.jpg" alt="Tasty food">
             <div class="content">
                 <h3>tasty food</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
-                <a href="#" class="btn">ordern now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/g-2.jpg" alt="">
+            <img loading="lazy" src="images/g-2.jpg" alt="Tasty food">
             <div class="content">
                 <h3>tasty food</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
-                <a href="#" class="btn">ordern now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/g-3.jpg" alt="">
+            <img loading="lazy" src="images/g-3.jpg" alt="Tasty food">
             <div class="content">
                 <h3>tasty food</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
-                <a href="#" class="btn">ordern now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/g-4.jpg" alt="">
+            <img loading="lazy" src="images/g-4.jpg" alt="Tasty food">
             <div class="content">
                 <h3>tasty food</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
-                <a href="#" class="btn">ordern now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/g-5.jpg" alt="">
+            <img loading="lazy" src="images/g-5.jpg" alt="Tasty food">
             <div class="content">
                 <h3>tasty food</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
-                <a href="#" class="btn">ordern now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/g-6.jpg" alt="">
+            <img loading="lazy" src="images/g-6.jpg" alt="Tasty food">
             <div class="content">
                 <h3>tasty food</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
-                <a href="#" class="btn">ordern now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/g-7.jpg" alt="">
+            <img loading="lazy" src="images/g-7.jpg" alt="Tasty food">
             <div class="content">
                 <h3>tasty food</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
-                <a href="#" class="btn">ordern now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/g-8.jpg" alt="">
+            <img loading="lazy" src="images/g-8.jpg" alt="Tasty food">
             <div class="content">
                 <h3>tasty food</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
-                <a href="#" class="btn">ordern now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
         </div>
         <div class="box">
-            <img src="images/g-9.jpg" alt="">
+            <img loading="lazy" src="images/g-9.jpg" alt="Tasty food">
             <div class="content">
                 <h3>tasty food</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti, ipsum.</p>
-                <a href="#" class="btn">ordern now</a>
+                <a href="#order" class="btn">order now</a>
             </div>
         </div>
 
@@ -336,22 +339,22 @@
     <div class="row">
         
         <div class="image">
-            <img src="images/order-img.jpg" alt="">
+            <img loading="lazy" src="images/order-img.jpg" alt="Food ready to be ordered">
         </div>
 
-        <form action="">
+        <form action="#" onsubmit="event.preventDefault(); alert('Thanks! This is a demo, so no order was sent.');">
 
             <div class="inputBox">
-                <input type="text" placeholder="name">
-                <input type="email" placeholder="email">
+                <input type="text" name="name" placeholder="name" aria-label="name">
+                <input type="email" name="email" placeholder="email" aria-label="email">
             </div>
 
             <div class="inputBox">
-                <input type="number" placeholder="number">
-                <input type="text" placeholder="food name">
+                <input type="tel" name="phone" placeholder="number" aria-label="number">
+                <input type="text" name="food" placeholder="food name" aria-label="food name">
             </div>
 
-            <textarea placeholder="address" name="" id="" cols="30" rows="10"></textarea>
+            <textarea placeholder="address" name="address" aria-label="address" cols="30" rows="10"></textarea>
 
             <input type="submit" value="order now" class="btn">
 
@@ -371,9 +374,9 @@
     <div class="box-container">
 
         <div class="box">
-            <img src="images/pic1.png" alt="">
+            <img loading="lazy" src="images/pic1.png" alt="Customer photo">
             <h3>john deo</h3>
-            <div class="stars">
+            <div class="stars" role="img" aria-label="Rated 4 out of 5">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -383,9 +386,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod ratione vel laboriosam? Est, maxime rem. Itaque.</p>
         </div>
         <div class="box">
-            <img src="images/pic2.png" alt="">
+            <img loading="lazy" src="images/pic2.png" alt="Customer photo">
             <h3>john deo</h3>
-            <div class="stars">
+            <div class="stars" role="img" aria-label="Rated 4 out of 5">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -395,9 +398,9 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti delectus, ducimus facere quod ratione vel laboriosam? Est, maxime rem. Itaque.</p>
         </div>
         <div class="box">
-            <img src="images/pic3.png" alt="">
+            <img loading="lazy" src="images/pic3.png" alt="Customer photo">
             <h3>john deo</h3>
-            <div class="stars">
+            <div class="stars" role="img" aria-label="Rated 4 out of 5">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -439,7 +442,7 @@
                         </div>
                 </div>
                 <div class="box">
-                    <div class="icon"><i class="fa-solid fa-envelopes"></i></div>
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
                         <div class="text">
                             <h1>Email</h1>
                             <p>madhuSudhan123@gmail.com</p> 
@@ -448,22 +451,22 @@
 
             </div>
             <div class="contactForm">
-                <form>
-                    <h2>Send Messages</h2>
+                <form action="#" onsubmit="event.preventDefault(); alert('Thanks! This is a demo, so no message was sent.');">
+                    <h2>Send a message</h2>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="text" id="fullname" name="fullname" aria-label="Full name" required>
                         <span>Full Name</span>
                     </div>
                     <div class="inputBox">
-                        <input type="text" name="" required="required">
+                        <input type="email" id="cemail" name="email" aria-label="Email" required>
                         <span>Email</span>
                     </div>
                     <div class="inputBox">
-                        <textarea required="required"></textarea>
+                        <textarea name="message" aria-label="Your message" required></textarea>
                         <span>Type Your Message</span>
                     </div>
                     <div class="inputBox">
-                        <input type="submit" name="Send">
+                        <input type="submit" value="Send">
                     </div>
                 </form>
             </div>
@@ -488,17 +491,15 @@
 </section>
 
 <!-- scroll top button  -->
-<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+<a href="#home" class="fas fa-angle-up" id="scroll-top" aria-label="Back to top"></a>
 
 <!-- loader  -->
 <div class="loader-container">
     <img src="images/loader.gif" alt="">
 </div>
 
-
 <!-- custom js file link  -->
-<script src="script.js"></script>
-
+<script src="script.js" defer></script>
 
 </body>
 </html>

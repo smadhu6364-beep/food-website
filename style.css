@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
 
+img{ max-width:100%; height:auto; }
+
 :root{
   --red:#ff3838;
 }
@@ -295,7 +297,7 @@ header .navbar a:hover{
   gap:1.5rem;
   min-height: 100vh;
   align-items: center;
-  background:url(../images/home-bg.jpg) no-repeat;
+  background:url(images/home-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
 }
@@ -734,4 +736,20 @@ header .navbar a:hover{
     width:100%;
   }
 
+}
+/* --- accessibility and comfort additions --- */
+:focus-visible{
+  outline: .3rem solid var(--red);
+  outline-offset: .3rem;
+}
+#menu-bar{ background: none; cursor: pointer; }
+input:focus-visible, textarea:focus-visible{ outline-offset: 0; }
+
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior: auto; }
+  *, *::before, *::after{ transition: none !important; animation: none !important; }
+}
+
+@media (prefers-color-scheme: dark){
+  body{ background:#141414; }
 }
